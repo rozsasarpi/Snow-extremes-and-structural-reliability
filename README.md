@@ -1,4 +1,4 @@
-Snow-extremes-and-structural-reliability
+Snow extremes and structural reliability
 ==============
 
 LaTeX source of my dissertation submitted for the degree of Doctor of Philosophy in Civil Engineering.
