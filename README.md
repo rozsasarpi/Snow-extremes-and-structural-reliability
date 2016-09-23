@@ -7,6 +7,8 @@ __This is an updated version of the one available on the [university repository]
 
 The reason: according to the rules of Pál Vásárhelyi Doctoral School of Civil Engineering and Earth Sciences the dissertation submitted for final reviews cannot be updated, thus even the reviewers' comments cannot be incorporated.
 
+The compiled pdf file is also available from this repo: *thesis.pdf*.
+
 __Info on updates:__
 * incorporate some suggestions, observations made by the reviewers;
 * correct some typos and minor editorial errors;
