@@ -14,7 +14,8 @@ __Info on updates:__
 * correct some typos and minor editorial errors;
 * no major modifications are made, the results and conclusions are unaffected.
 
-__Metadata:__
+Metadata
+----------------
 
 | Title       | Snow extremes and structural reliability                                      |
 | :---------- | :-----------------------------------------------------------------------------|
@@ -25,7 +26,8 @@ __Metadata:__
 | Degree      | Ph.D. in Civil Engineering                                                    |  
 | Year        | 2016                                                                          |  
 
-__To cite:__
+To cite
+----------------
 
 Updated version:  
 
