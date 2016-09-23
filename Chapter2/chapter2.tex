@@ -2,7 +2,7 @@
 %****************************** Second Chapter *********************************
 %*******************************************************************************
 
-\chapter{Overview of uncertainty modeling and propagation}
+\chapter{Overview of uncertainty modeling and structural reliability}
 \label{cha:overview}
 
 % **************************** Define Graphics Path **************************
@@ -117,7 +117,7 @@ Structural reliability is concerned with the probabilistic analysis of engineeri
 \end{equation}
 where $p(.)$ represents a probability density function that is identified by its argument. For example $p(x)$ and $p(y)$ are in general completely different functions. This notation allows greater clarity and conciseness than in reliability engineering typically used notation, $p(x) \equiv f_X(x)$.
 
-The two main challenges in structural reliability are the inference of probabilistic models in the face of information scarcity, and the calculation of the typically high-dimensional integral (Eq.\ref{eq:Pf_general}). The integral is usually approximated by numerical techniques tailored for the particular features of structural reliability problems. These aim to reduce the required number of performance state function evaluations to minimal.
+The two main challenges in structural reliability are the inference of probabilistic models in the face of information scarcity, and the calculation of the typically high-dimensional integral (Eq.\ref{eq:Pf_general}). The value of the integral is usually approximated by numerical techniques tailored for the particular features of structural reliability problems. These aim to reduce the required number of performance state function evaluations to minimal.
 
 In this thesis, unless otherwise stated, the first order reliability method (FORM) \citep{Hasofer1974} is used for approximating the integral. It is sufficiently accurate for most structural engineering problems \citep{EN0}, though the presented calculations are often verified by more accurate methods, such as second order reliability method (SORM), Monte Carlo simulation (MC), and importance sampling Monte Carlo simulation (isMC).
 

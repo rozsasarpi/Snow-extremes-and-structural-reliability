@@ -32,7 +32,7 @@ In reliability studies and standardization statistical uncertainties are routine
 %****************************************************************************************
 %****************************************************************************************
 \section{Solution strategy}
-The meteorological actions on structures are almost solely described by statistical distributions since the underlying natural phenomena are too complex to be represented by physical models. This approach is adopted here and the ground snow intensity is modeled by a single random variable.
+The meteorological actions on structures are almost solely described by statistical distributions since the underlying natural phenomena are too complex to be represented by physical models. This approach is adopted here and the ground snow load intensity is modeled by a single random variable.
   
 In line with the current engineering practice the block method \citep{Coles2001} is applied. The block length is one year, covering a whole winter season. The annual ground snow maxima are treated as a sample for each location. The potentially more effective multiple block maxima or smaller block lengths are discarded, since the accumulative nature of snow loads makes it difficult to identify peaks and to justify their independence. For the same reason the peak over threshold approach \citep{Reiss2007} was also not used. To account for dependence between maxima from the same winter season a stochastic process based approach is presented in Chapter~\ref{cha:copula}.
 
@@ -284,7 +284,7 @@ The ground snow data of Budapest are used for the analyses (Location 4 in Table~
 The mechanical model and loads of the analyzed structural member are presented in Figure~\ref{fig:beam_illustration}. The flexural failure of a mid-span cross-section is selected as a representative ultimate limit state:
 \begin{equation}
 %	\label{eq:BMA}
-	g = {K_{\mathrm{R}}} \cdot R - {K_{\mathrm{E}}} \cdot \left( {\mu  \cdot {s_{{\mathrm{g,50}}}} + {g_{\mathrm{p}}}} \right) \cdot a \cdot \frac{{{L^2}}}{8}.
+	g(\mathbf{X}) = {K_{\mathrm{R}}} \cdot R - {K_{\mathrm{E}}} \cdot \left( {\mu  \cdot {s_{{\mathrm{g,50}}}} + {g_{\mathrm{p}}}} \right) \cdot a \cdot \frac{{{L^2}}}{8}.
 \end{equation}
 
 \begin{figure}[htbp!]
