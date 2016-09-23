@@ -1,0 +1,42 @@
+% ******************************* Thesis Appendix D ********************************
+
+\chapter{Details of reliability analyses}
+\label{ap:reli_details}
+
+\section{First order reliability method, FORM}
+
+The improved Hasofer-Lind-Rackwitz-Fiessler algortihm \citep{Rackwitz1979, Zhang1995a} is used to solve the constrained optimization problem. For correlated random variables unless otherwise stated the Nataf transformation \citep{Liu1986} with Cholesky decomposition is used to obtain independent, normally distributed random variables.
+
+\section{Second order reliability method, SORM}
+
+The asymptotic formula of \citet{Breitung1984} is used as a correction term in SORM:
+
+\begin{equation}
+	{P_f} \approx \Phi ( - \beta )\left( {\prod\limits_{j = 1}^{n - 1} {\frac{1}{{\sqrt {1 + \beta  \cdot {\kappa _j}} }}} } \right).
+\end{equation}
+
+
+\section{Importance sampling Monte Carlo, isMC}
+
+\begin{equation}
+\label{eq:isMC_integral}
+	{P_\mathrm{f}} = \int\limits_{({\mathbf{X}})} {{h_{\mathbf{X}}}({\mathbf{x}}) \cdot \frac{{{f_{\mathbf{X}}}({\mathbf{x}})}}{{{h_{\mathbf{X}}}({\mathbf{x}})}} \cdot I({\mathbf{x}})}  \cdot \mathrm{d}{\mathbf{x}}
+\end{equation}
+Where:
+
+\begin{tabular}{ll}
+	$I(\mathbf{x})$ & indicator function of the violation of the limit state; \\
+	$f_{\mathbf{X}}({\mathbf{x}})$ & joint PDF of random variables, $\mathbf{X}$; \\
+	$h_{\mathbf{X}}({\mathbf{x}})$ & sampling PDF.
+\end{tabular}
+
+\noindent
+The integral in Eq.\ref{eq:isMC_integral} is replaced with summation for simulation based evaluation:
+
+\begin{equation}
+\label{eq:isMC_sum}
+	{P_\mathrm{f}} = \mathop {\lim }\limits_{n \to \infty } \frac{1}{n} \cdot \sum\limits_{i = 1}^n {\frac{{{f_{\bf{X}}}({{\bf{x}}_i})}}{{{h_{\bf{X}}}({{\bf{x}}_i})}} \cdot I({{\bf{x}}_i})}. 
+\end{equation}
+
+%\nomenclature[a-RV]{$RV$}{Return value}
+%\nomenclature[a-RP]{$RP$}{Return period}

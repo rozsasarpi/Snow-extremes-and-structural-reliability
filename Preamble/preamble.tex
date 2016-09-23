@@ -1,0 +1,275 @@
+% ******************************************************************************
+% ****************************** Custom Margin *********************************
+
+% Add `custommargin' in the document class options to use this section
+% Set {innerside margin / outerside margin / topmargin / bottom margin}  and
+% other page dimensions
+\ifsetCustomMargin
+  \RequirePackage[left=30mm,right=20mm,top=30mm,bottom=20mm]{geometry}
+  \setFancyHdr % To apply fancy header after geometry package is loaded
+\fi
+
+% *****************************************************************************
+% ******************* Fonts (like different typewriter fonts etc.)*************
+
+% Add `customfont' in the document class option to use this section
+
+\ifsetCustomFont
+  % Set your custom font here and use `customfont' in options. Leave empty to
+  % load computer modern font (default LaTeX font).
+  %\RequirePackage{helvet}
+
+	\usepackage{mathpazo} % add possibly `sc` and `osf` options
+	%\usepackage[T1]{fontenc}
+	%\usepackage[garamond]{mathdesign}
+	%\usepackage{eulervm}
+	
+  % For use with XeLaTeX
+  %  \setmainfont[
+  %    Path              = ./libertine/opentype/,
+  %    Extension         = .otf,
+  %    UprightFont = LinLibertine_R,
+  %    BoldFont = LinLibertine_RZ, % Linux Libertine O Regular Semibold
+  %    ItalicFont = LinLibertine_RI,
+  %    BoldItalicFont = LinLibertine_RZI, % Linux Libertine O Regular Semibold Italic
+  %  ]
+  %  {libertine}
+  %  % load font from system font
+  %  \newfontfamily\libertinesystemfont{Linux Libertine O}
+\fi
+
+\usepackage{textgreek}
+\usepackage{phaistos}
+% well looking approximate symbol for text
+%\newcommand\textsim{\raise.17ex\hbox{$\scriptstyle\sim$}}
+
+% *****************************************************************************
+% **************************** Custom Packages ********************************
+
+% ************************* Algorithms and Pseudocode **************************
+
+%\usepackage{algpseudocode}
+
+% ************************* Language **************************
+\usepackage[hungarian,british]{babel}
+
+% ********************Captions and Hyperreferencing / URL **********************
+
+% Captions: This makes captions of figures use a boldfaced small font.
+\RequirePackage[small,bf]{caption}
+
+\RequirePackage[labelsep=space,tableposition=top]{caption}
+\renewcommand{\figurename}{Fig.} %to support older versions of captions.sty
+
+% to refer the chapter names
+\usepackage{nameref}
+
+% ********************************** Tables ************************************
+\usepackage{booktabs} % For professional looking tables
+\usepackage{multirow}
+
+\usepackage{rotating} % for floating landscape tables
+
+\usepackage{multicol}
+%\usepackage{longtable}
+%\usepackage{tabularx}
+
+
+\usepackage[table]{xcolor} % for table coloring, !!load before tikz!!
+
+\usepackage{threeparttable} % for notes in tables
+
+% *************************** Graphics and figures *****************************
+
+\usepackage{graphicx}
+
+%\usepackage{rotating}
+%\usepackage{wrapfig}
+
+% Uncomment the following two lines to force Latex to place the figure.
+% Use [H] when including graphics. Note 'H' instead of 'h'
+%\usepackage{float}
+%\restylefloat{figure}
+
+% Subcaption package is also available in the sty folder you can use that by
+% uncommenting the following line
+% This is for people stuck with older versions of texlive
+%\usepackage{sty/caption/subcaption}
+\usepackage{subcaption}
+
+% ................................. TiKZ .......................................
+% for tikz graphics
+\usepackage{tikz}
+\usepackage{verbatim}
+\usetikzlibrary{arrows}
+%\usepackage{standalone} % to load separate TiKZ files
+
+
+% *********************************** SI Units *********************************
+\usepackage{siunitx} % use this package module for SI units
+
+
+% ******************************* Line Spacing *********************************
+
+% Choose linespacing as appropriate. Default is one-half line spacing as per the
+% University guidelines
+
+% \doublespacing
+% \onehalfspacing
+% \singlespacing
+
+% ************************ Typesetting / General *******************************
+ 
+% microtype is automatically loaded if pdflatex is used!
+
+% ************************ Formatting / Footnote *******************************
+
+% Don't break enumeration (etc.) across pages in an ugly manner (default 10000)
+%\clubpenalty=500
+%\widowpenalty=500
+
+%\usepackage[perpage]{footmisc} %Range of footnote options
+%\usepackage{enumerate}
+\usepackage{enumitem}
+
+%\usepackage{hyphenat}
+
+% ************************ References / Hyperrefernces *************************
+
+% coloring references
+%\usepackage{color}
+%\usepackage[backref=page]{hyperref}
+
+\usepackage{color,hyperref}
+%\usepackage{color}
+%\usepackage{hyperref}
+
+% ************************ Coloring *******************************************
+
+\definecolor{darkblue}{rgb}{0.0, 0.0, 0.3}
+\definecolor{cornflowerblue}{rgb}{0.392, 0.584, 0.9294}
+\definecolor{midnightblue}{rgb} {0.1, 0.1, 0.44} %{1,0.41,0.70}
+%\definecolor{midnightblue}{rgb} {0, 0, 0} %for print
+\definecolor{orange}{rgb}{1.0, 0.5, 0.0}
+\definecolor{lightgrey}{rgb}{0.9, 0.9, 0.9}
+
+% *****************************************************************************
+% *************************** Bibliography  and References ********************
+
+%\usepackage{cleveref} %Referencing without need to explicitly state fig /table
+
+% Add `custombib' in the document class option to use this section
+\ifuseCustomBib
+   %\RequirePackage[square, sort, numbers, authoryear]{natbib} % CustomBib
+   
+   % add custom coloring
+   \usepackage{hyperref}
+   \hypersetup{colorlinks,breaklinks,
+               linkcolor = midnightblue,urlcolor = midnightblue,
+               anchorcolor = midnightblue,citecolor = midnightblue}
+   \RequirePackage[round, sort, authoryear]{natbib} % CustomBib
+   
+   \usepackage{hypernat}
+   \usepackage{etoolbox}
+   \makeatletter
+   \patchcmd{\BR@backref}{\newblock}{\newblock(page~}{}{}
+   \patchcmd{\BR@backref}{\par}{)\par}{}{}
+   \makeatother
+%   
+%\renewcommand{\backrefxxx}[3]{(page \hyperlink{page.#1}{#1})}
+   % sourced from : https://tex.stackexchange.com/questions/36307/formatting-back-references-in-bibliography
+
+% If you would like to use biblatex for your reference management, as opposed to the default `natbibpackage` pass the option `custombib` in the document class. Comment out the previous line to make sure you don't load the natbib package. Uncomment the following lines and specify the location of references.bib file
+
+%\RequirePackage[backend=biber, style=numeric-comp, citestyle=numeric, sorting=nty, natbib=true]{biblatex}
+%\bibliography{References/references} %Location of references.bib only for biblatex
+
+\fi
+
+% changes the default name `Bibliography` -> `References'
+\renewcommand{\bibname}{References}
+
+% package for multiple bibliographies
+%\usepackage{chapterbib}
+
+% ******************************** Roman Pages *********************************
+% The romanpages environment set the page numbering to lowercase roman one
+% for the contents and figures lists. It also resets
+% page-numbering for the remainder of the dissertation (arabic, starting at 1).
+
+\newenvironment{romanpages}{
+  \setcounter{page}{1}
+  \renewcommand{\thepage}{\roman{page}}}
+{\newpage\renewcommand{\thepage}{\arabic{page}}}
+
+
+% ******************************************************************************
+% ************************* User Defined Commands ******************************
+% ******************************************************************************
+
+% *********** To change the name of Table of Contents / LOF and LOT ************
+
+%\renewcommand{\contentsname}{My Table of Contents}
+%\renewcommand{\listfigurename}{My List of Figures}
+%\renewcommand{\listtablename}{My List of Tables}
+
+
+% ********************** TOC depth and numbering depth *************************
+
+\setcounter{secnumdepth}{2}
+\setcounter{tocdepth}{2}
+
+
+% ******************************* Nomenclature *********************************
+
+% for two column nomenclature
+\renewcommand*{\nompreamble}{\begin{multicols}{2}}
+\renewcommand*{\nompostamble}{\end{multicols}}
+\setlength{\columnsep}{3em}
+
+%\usepackage{nomencl}
+%\makenomenclature
+% To change the name of the Nomenclature section, uncomment the following line
+
+%\renewcommand{\nomname}{Symbols}
+
+
+% ********************************* Appendix ***********************************
+
+% The default value of both \appendixtocname and \appendixpagename is `Appendices'. These names can all be changed via:
+
+%\renewcommand{\appendixtocname}{List of appendices}
+%\renewcommand{\appendixname}{Appndx}
+
+% *********************** Configure Draft Mode **********************************
+
+% Uncomment to disable figures in `draftmode'
+%\setkeys{Gin}{draft=true}  % set draft to false to enable figures in `draft'
+
+% These options are active only during the draft mode
+% Default text is "Draft"
+%\SetDraftText{DRAFT}
+
+% Default Watermark location is top. Location (top/bottom)
+%\SetDraftWMPosition{bottom}
+
+% Draft Version - default is v1.0
+%\SetDraftVersion{v1.1}
+
+% Draft Text grayscale value (should be between 0-black and 1-white)
+% Default value is 0.75
+%\SetDraftGrayScale{0.8}
+
+
+% ******************************** Todo Notes **********************************
+%% Uncomment the following lines to have todonotes.
+
+\ifsetDraft
+	\usepackage[colorinlistoftodos]{todonotes}
+	\newcommand{\mynote}[1]{\todo[author=kks32,size=\small,inline,color=green!40]{#1}}
+\else
+	\newcommand{\mynote}[1]{}
+	\newcommand{\listoftodos}{}
+\fi
+
+% Example todo: \mynote{Hey! I have a note}

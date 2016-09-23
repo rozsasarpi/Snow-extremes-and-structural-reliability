@@ -1,0 +1,41 @@
+% ************************** Thesis Abstract *****************************
+% Use `abstract' as an option in the document class to print only the titlepage and the abstract.
+\begin{abstract}
+
+This study is motivated by the sharp contrast between physical and probabilistic models of civil engineering. The current practice focuses on physical models while probabilistic ones are relatively underdeveloped. This unbalance can even hinder advances in physical models. Moreover, this rarely acknowledged asymmetry\mynote{-- often perpetuated by the obscurity of standards --} creates the illusion that our deterministic models accurately capture all or at least the main aspects of reality. Thus, this thesis aspires to subtly adjust this imbalance by focusing on probabilistic models.
+
+The main contribution is that it explores often neglected or oversimplified aspects of probabilistic analysis in civil engineering. These distinct but related issues are: (\textit{i}) selection of an appropriate distribution type; (\textit{ii}) effect of statistical uncertainty; (\textit{iii}) measurement uncertainty; (\textit{iv}) long-term trends; and (\textit{v}) dependence structure. These are demonstrated through analyzing extreme ground snow loads, although they are inevitably present for most random variables. Snow action, which has recently led to numerous structural failures in Central Europe, is treated as a vehicle of illustration to give a sharp focus to the study.
+
+Methods developed in mathematical statistics, probability theory, information theory, and structural reliability are applied to tackle these issues. Fully statistical analysis of snow extremes is undertaken in conjunction with structural reliability analysis. The popular civil engineering approaches are compared with more advanced techniques that are able to capture the neglected effects in the former approaches. Snow water equivalent data of the Carpathian Region from more than 600 meteorological stations are analyzed, thus the results are representative for lowlands, for highlands, and for mountains as well. Furthermore, extensive parametric analyses are performed to extend the investigations to random variables other than ground snow intensity.
+
+%\noindent 
+Based on the analysis of the above-listed issues the following main conclusions are drawn:
+\begin{enumerate}[label=(\textit{\roman*})]
+	% DISTR
+	\item It is demonstrated that mountains and highlands are better represented by Weibull, while lowlands by Fréchet distribution. In comparison, the currently standardized Gumbel model recommended in Eurocode often appreciably underestimates the snow maxima of lowlands and thus leads to overestimation of structural reliability.
+			
+	% STAT UNC
+	\item It is shown that current practice, which neglects statistical uncertainties (parameter estimation and model selection uncertainties), can yield to even multiple orders of magnitude underestimation of failure probability. Bayesian posterior predictive distribution and Bayesian model averaging is proposed to account for parameter estimation and model selection uncertainties, respectively.
+	
+	% MES UNC
+	\item Statistical and interval based approaches are used to explore the effect of prevalently neglected measurement uncertainty on structural reliability. It is demonstrated that such simplification can lead to an order of magnitude 
+	underestimation of failure probability. If sufficient data are available to infer the probabilistic model of measurement uncertainty, then the statistical approach is recommended. Otherwise, the interval approach is advocated.
+	
+	% TIME-TREND
+	\item Using non-stationary extreme value analysis, statistically significant decreasing trend is found in annual ground snow extremes for most of the Carpathian Region. For some locations the effect of the trend on structural reliability is practically significant. This change is favorable from safety point of view as it increases reliability. Hence, revision of current regulations due to long-term trends is not needed from safety reasons, though it might be desirable from economic considerations. However, record lengths are insufficient to draw strong conclusions and to include trends in predicting extreme values with return periods of hundreds of years.
+	
+	% COPU
+	\item Study of the widely used Gauss (normal, or Gaussian) copula assumption of time-continuous stochastic processes is performed. It reveals that Gauss copula can four times underestimate or even ten times overestimate time-variant failure probabilities obtained by other adopted copulas ($t$, Gumbel, rotated Gumbel, and rotated Clayton). Model averaging is proposed as a viable approach to rigorously account for copula function uncertainty.
+\end{enumerate}
+
+
+
+Based on these findings, practical recommendations are made for normal and safety critical structures. The effects and proposed approaches are illustrated through real life examples. Reliability of the more than 130 years old wrought iron structure of Eiffel-hall and a steel hall of Paks Nuclear Power Plant is analyzed. 
+
+The tackled challenges are general and relevant for most random variables such as wind, traffic, and earthquake actions. Therefore, the findings can be applied for these as well and they can help to draft more consistent standards and to build safer structures.
+
+\end{abstract}
+
+%[...]creates the illusion that our \mynote{highly sophisticated}deterministic numerical models accurately capture all or at least the main aspects of reality.[...]
+
+%\mynote{Additionally this choice is motivated by the relatively numerous snow related structural collapses and damages, which are partially attributed to the insufficiency of current design standards.}

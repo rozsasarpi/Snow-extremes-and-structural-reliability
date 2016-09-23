@@ -1,0 +1,95 @@
+% ******************************* Thesis Appendix E ********************************
+
+\chapter{Summary of contributions in Hungarian}
+\label{ap:hun_theses}
+
+\begin{otherlanguage}{hungarian}
+%.................................................................
+% DISTRIBUTION
+\begin{center}
+	\noindent\rule[0.5ex]{0.5\linewidth}{0.5pt} \\[10pt]
+	\textbf{I. Tézis} \hfill \\[13pt]
+\end{center}
+%\end{center}
+	Statisztikailag elemeztem a Kárpátok régió több, mint 6000 rácspontjának felszíni hó-víz egyenérték adatsorát, melyek az 1961-2010 időszakot fedik le és 49 telet foglalnak magukba. Számos eloszlástípust illesztettem a napi észlelésekből nyert hómaximumokra és kiterjedt statisztikai vizsgálatok felhasználásával:
+\begin{enumerate}[leftmargin=*, align=left, labelwidth=*]
+	\item[\textbf{I./a}] Megmutattam, hogy szemben a jelenleg szabványosított -- Eurocode által is javasolt és Magyarországon alkalmazott -- Gumbel-eloszlással, a hegységek és dombságok éves hómaximumait a Weibull-, míg alföldekét a Fréchet-eloszlás írja le jobban. A Gumbel-eloszlás gyakran érdemben alábecsüli az alföldek hómaximumait, így túlbecsüli a szerkezetek megbízhatóságát. A lognormális eloszlás általában még gyengébben teljesít, mint a Gumbel-eloszlás. Megbízhatósági, empirikus (adat vezérelt) és elméleti megfontolások alapján -- a vizsgált eloszlástípusok közül -- a Weibull-eloszlást javaslom hegységek és dombságok esetén, míg a Fréchet-eloszlást alföldekre.
+	
+	\item[\textbf{I./b}] Előállítottam a régió reprezentatív területeihez tartozó hómaximumok jellemző értékeinek posterior eloszlását. Ezek prior információként használhatók hasonló klimatikus adottságú régiók vizsgálatakor. Továbbá, készítettem egy nyílt forráskódú, online, interaktív, 10 km felbontású hótérképet, mely karakterisztikus hóterhek, valamint rendkívüli hóterhek meghatározására használható. 
+\end{enumerate}
+
+\citep{RozsasAMM2016, RozsasESREL2015, VighTO2016, RozsasIABSE2015}
+
+
+\begin{center}
+	\noindent\rule[0.5ex]{0.5\linewidth}{0.5pt}
+	\item[\textbf{II. Tézis}] \hfill
+\end{center}
+%.................................................................
+% STAT UNCERTAINTY 
+Elemeztem a statisztikai bizonytalanságok (paraméterbecslési és modellválasztási bizonytalanság), hatását éves felszíni hómaximumok jellemző fraktiliseire és szerkezeti megbízhatóságra. A jelenlegi építőmérnöki gyakorlat többségében elhanyagolja ezeket a bizonytalanságokat, habár elkerülhetetlenül jelen vannak az adatok szűkössége miatt.
+\begin{enumerate}[leftmargin=*, align=left, labelwidth=*]
+	\item[\textbf{II./a}] Megmutattam, hogy a paraméterbecslési bizonytalanság elhanyagolása a jellemző fraktilisek jelentős (20\%) alulbecsléséhez vezethet. Továbbá, rámutattam, hogy az alkalmazott eloszlás típusának (modellválasztási bizonytalanság) nagyobb hatása van a jellemző fraktilisekre, mint a paraméterbecslési bizonytalanságnak. Kétparaméteres lognormális, háromparaméteres lognormális, Gumbel- és általánosított extrém eloszlásokat alkalmaztam.
+	
+	\item[\textbf{II./b}] Megbízhatósági analízisek felhasználásával megmutattam, hogy a statisztikai bizonytalanságok elhanyagolása akár több nagyságrenddel is alulbecsülheti a tönkremeneteli valószínűséget. Illusztráltam, hogy a „legjobb” pontbecslések, mint a maximum likelihood becslés vagy a momentumok módszer alkalmazása megbízhatósági szempontból nem konzervatív. Ezek a jellemző fraktilisek és tönkremeneteli valószínűségek gyakorlati szempontból szignifikáns alulbecsléséhez vezethetnek.
+	Az eredmények alapján javaslatot tettem a statisztikai bizonytalanságok kezelésére és figyelembevételére biztonsági szempontból kritikus és normál szerkezetek esetére. A bayesi posterior előrejelző eloszlás alkalmazását javaslom megbízhatósági analízisekben, továbbá modell átlagolást a modellválasztási bizonytalanság figyelembevételére.
+\end{enumerate}
+
+\citep{RozsasEpistemic2014, RozsasESREL2015, RozsasIABSE2015, RozsasMM2015, RozsasTVSB2015, RozsasIdojaras2016}
+
+
+\begin{center}
+	\noindent\rule[0.5ex]{0.5\linewidth}{0.5pt}
+	\item[\textbf{III. Tézis}] \hfill
+\end{center}
+%.................................................................
+% MEASUREMENT UNCERTAINTY
+Megvizsgáltam a felszíni hóterhek éves maximumai mérési bizonytalanságának hatásását szerkezetek megbízhatóságára. Ezt a bizonytalanságot a jelenlegi építőmérnöki gyakorlat tipikusan elhanyagolja. Statisztikai és intervallum alapú vizsgálatokra tettem javaslatot és megmutattam, hogy:
+\begin{enumerate}[leftmargin=*, align=left, labelwidth=*]
+	\item[\textbf{III./a}] A mérési bizonytalanság elhanyagolása jelentősen (nagyságrend) alulbecsülheti a tönkremeneteli valószínűséget. Meghatároztam a legfontosabb paraméterek azon tartományát, amelyekben a mérési bizonytalanságot figyelembe kellene venni. Ezeket normális, lognormális és Gumbel-eloszlások, többféle relatív szórás (0.2-0.6) és többféle nagyságú mérési bizonytalanság figyelembevételével állítottam elő (0-10\% az éves maximumok átlagának).
+	
+	\item[\textbf{III./b}] Amennyiben a mérési bizonytalanságot generáló mechanizmus ismert, úgy a statisztikai, míg ellenkező esetben az intervallum alapú megközelítést javaslom a bizonytalanság figyelembevételére. Alföldek hómaximumai esetén a mérési bizonytalanságok elhanyagolása elfogadható. Egyéb esetekben fejlettebb módszerek (statisztikai, intervallum) alkalmazása ajánlott.
+	
+	Gyakorlati alkalmazásokban rendre a megbízhatósági intervallum alsó határa és az előrejelző megbízhatósági index alkalmazását javaslom intervallum és statisztikai alapú megközelítések esetén. A pontbecslések bizonytalansági intervallumokkal való kiegészítését javaslom.
+\end{enumerate}
+
+  
+\citep{RozsasREC2016snow}
+
+
+\begin{center}
+	\noindent\rule[0.5ex]{0.5\linewidth}{0.5pt}
+	\item[\textbf{IV. Tézis}] \hfill
+\end{center}
+%.................................................................
+% LONG-TERM TREND
+Nemstacionárus extrém érték analízis alkalmazásával megvizsgáltam a Kárpátok Régió elmúlt 49 év felszíni hómaximumaiban mutatkozó hosszú idejű időbeli trendeket. Statisztikai és információelméleti vizsgálatokkal kimutattam, hogy:
+\begin{enumerate}[leftmargin=*, align=left, labelwidth=*]
+	\item[\textbf{IV./a}] A vizsgált Kárpátok régió területének 97\%-án időben csökkenő tendencia mutatkozik a hómaximumokban. Statisztikaillag szignifikáns ($p < 0.05$) csökkenő trendet találtam a régió területének 65\%-án. A hipotézisvizsgálatot a hatás mértékének és a teszt erejének vizsgálatával is kiegészítettem. Továbbá, kimutattam, hogy néhány helyszín karakterisztikus hóterhének csökkenése gyakorlati szempontból is szignifikáns. Az időbeli trendeket információelméleti módszerekkel is igazoltam.
+	
+	\item[\textbf{IV./b}] A régió Fréchet-eloszlással jellemezhető helyszíneinek többsége esetén a csökkenő hómaximumoknak csekély hatása van a szerkezetek megbízhatóságára. A paraméterbecslés bizonytalansága domináns. Erős csökkenő tendenciával és Weibull-eloszlással jellemezhető helyszínek esetén a csökkenés hatása gyakorlati szempontból is szignifikáns a szerkezeti megbízhatóság vonatkozásában. Ugyanakkor a változás biztonsági szempontból kedvező, mivel növeli a megbízhatóságot.
+\end{enumerate}
+
+\citep{RozsasIdojaras2016, RozsasAMM2016, SykoraIALCCE2016}
+
+
+\begin{center}
+	\noindent\rule[0.5ex]{0.5\linewidth}{0.5pt}
+	\item[\textbf{V. Tézis}] \hfill
+\end{center}
+%.................................................................
+% COPULA   
+Megvizsgáltam a széles körben alkalmazott Gauss-kopula feltételezés hatását időben folytonos sztochasztikus folyamatokra és megmutattam, hogy:
+\begin{enumerate}[leftmargin=*, align=left, labelwidth=*]
+  \item[\textbf{V./a}] Az alkalmazott függőségi szerkezetnek (kopula függvény) jelentős hatása van az időfüggő megbízhatóságra. A túlnyomóan alkalmazott Gauss-kopula feltételezés akár negyed- vagy tízszer akkora tönkremeneteli valószínűséget is eredményezhet, mint a többi vizsgált kopula függvény ($t$, Gumbel-, elforgatott Gumbel-, elforgatott Clayton-kopula). Egy egyszerű esetre megmutattam, hogy a kopula függvény megfelelő megválasztásával tetszőleges nagyságú eltérést hozhatunk létre az átlépési sebességben a Gauss-kopulához viszonyítva.
+  
+  \item[\textbf{V./b}] Az autokorrelációs függvény típusának számottevő hatása van az időfüggő tönkremeneteli valószínűségre. A Cauchy- illetve Gauss-autokorrelációs függvényekkel kapott normalizált tönkremeneteli valószínűségek aránya 1.41. Az arányszámot kizárólag az autokorrelációs függvény típusa befolyásolja.
+  
+  \item[\textbf{V./c}] Nemfüggetlen felszíni hóteher maximumok esetén az extrém típusú kopulák, mint a Gumbel-kopula, jelentősen jobban illeszkednek az adatokra, mint a Gauss-kopula. A Gumbel-kopula akár négyszer kisebb átlépési sebességet is eredményezhet, mint a Gauss-kopula.
+  
+  Amennyiben elegendő észlelés áll rendelkezésre, úgy a kopula függvényt azokból célszerű meghatározni statisztikai módszerekkel. Kevés észlelés esetén több kopula függvény alkalmazása javasolt a modellválasztási bizonytalanság mértékének felmérésére. Utóbbi esetben a Gauss-kopula kizárólagos alkalmazása nem indokolt, az a biztonság kárára is tévedhet. A modell átlagolást javaslom a kopula modellválasztási bizonytalanság figyelembevételére.
+\end{enumerate}
+
+\citep{RozsasSR2016}
+
+\end{otherlanguage}

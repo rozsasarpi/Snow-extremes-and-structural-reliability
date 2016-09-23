@@ -1,0 +1,269 @@
+\chapter{Summary and conclusions}
+\label{cha:summary}
+% **************************** Define Graphics Path **************************
+\ifpdf
+    \graphicspath{{Chapter9/Figs/Raster/}{Chapter9/Figs/PDF/}{Chapter9/Figs/}}
+\else
+    \graphicspath{{Chapter9/Figs/Vector/}{Chapter9/Figs/}}
+\fi
+
+% **************************** Chapter Abstract ******************************
+\leftskip=1cm
+\noindent
+\emph{This final chapter reviews the completed study from a broader perspective and recapitulates the main conclusions along with practical recommendations. Furthermore, theses are formulated and enumerated in accordance with requirements of the Doctoral School.}
+
+\leftskip=0pt\rightskip=0pt
+
+%****************************************************************************************
+%****************************************************************************************
+\section{Purpose and significance of the study}
+
+Application of methods developed in mathematical statistics and probability theory to civil engineering problems. Some neglected or inadequately addressed questions are answered using these methods. Strictly speaking no original idea is added just transferring and applying probabilistic methods to civil engineering problems.
+
+The main contribution of this study is that it explores commonly neglected or underappreciated effects in structural reliability these are: statistical uncertainty, measurement uncertainty, correlation structure, long-term trends. These effects are demonstrated through extreme snow events, although present for all random variables. We argue that these could and should be incorporated or indicated in reliability studies since their neglect can introduce systematic bias. This not only violates one basic requirement in probability analysis\footnote{One of Jaynes' fundamental desideratum \citep{Jaynes2003} and Der Kiureghian requirements \citep{Kiureghian1989}.}
+
+An honest approach requires the appreciation of 
+The challenge is somehow similar to observational data analysis in health care, where systematic bias can lead to unreliable outcomes. With the increase of computational power and decrease of cost we expect large increase of data in civil engineering as well, e.g. cheap sensors providing continuous data and the my , although as the example of health care data analysis show we can expect additional challenges.
+
+%We argue that these could and should be incorporated or indicated in reliability studies since their neglect can introduce systematic bias. This not only violates one basic requirement in probability analysis One of Jaynes' fundamental desideratum \citep{Jaynes2003} and Der Kiureghian requirements \citep{Kiureghian1989}.
+
+%****************************************************************************************
+%****************************************************************************************
+\section{Recapitulation of main conclusions}
+
+The main conclusions emphasizing the contributions of this work are presented as responses to the questions posed in Section \ref{sec:prob_state}. The assertions about current practice, previous works, and novelty of the answers are not absolute statements and the expression: \textit{to the best knowledge of the candidate} should be imagined in front of each. Additionally, the proposed practical recommendations constitute novelties, though they are not listed among them as already presented at proposed answers and conclusions.
+
+\begin{enumerate}[leftmargin=*, align=left]
+  %.................................................................
+  % DISTRIBUTION
+  \item \textit{What distribution function is the ``best'' to model ground snow extremes? What constitutes an appropriate model?}
+  
+    \textbf{Current practice, previous works} \\
+    
+    \textbf{Methodology} \\
+  
+    \textbf{Proposed answers, conclusions} \\
+  
+    \textbf{Novelty} \\
+
+    \textbf{Scope and limits} \\
+    
+
+
+  %.................................................................
+  % STAT UNCERTAINTY
+  \item \textit{How large is the effect of statistical uncertainties on structural reliability? Is their neglect justified? How should these uncertainties be taken into account?}
+
+    \textbf{Current practice, previous works} \\
+
+    \textbf{Methodology} \\
+
+    \textbf{Proposed answers, conclusions}
+
+    \textbf{Novelty} \\
+    Although precursors can be found in the civil engineering literature, these are based on ad hoc rules, e.g. and the effect of these uncertainties are not analyzed in depth/systematically yet. Neither a systematic, from statistical and reliability point of view sound, general approach was proposed.
+
+    \textbf{Scope and limits} \\
+    
+  
+  %.................................................................
+  % MEASUREMENT UNCERTAINTY
+  \item \textit{How measurement uncertainty should be taken into account and propagated to structural reliability? Is the current practice, that neglects it, on the safe side? Is their effect on failure probability practically significant?}
+
+    \textbf{Current practice, previous works} \\
+    Observations are inevitably contaminated with measurement uncertainty, which is a predominant source of uncertainty in some cases. In reliability analysis, probabilistic models are typically fitted to measurements without considering this uncertainty. The statistical approach to this problem is applied in astronomy, econometrics, biometrics, etc., however not in civil engineering.
+
+    \textbf{Methodology} \\
+    Statistical and interval-based approaches are proposed to quantify and to propagate measurement uncertainty. They are critically compared by analyzing ground snow measurements that are often affected by large measurement uncertainty. It is propagated through the mechanical model of a generic structure to investigate its effect on reliability.
+
+    \textbf{Proposed answers, conclusions}
+    \begin{itemize}
+      \item Sampling variability (parameter estimation uncertainty) has significant effect on reliability: it is dominant over measurement uncertainty for small interval radiuses and comparable for large radiuses.
+      \item For mountains and highlands, moderate $\pm 4\%$ measurement uncertainty -- relative to value of an observed variable -- can lead to significant reduction of reliability level. For lowlands, even a large $\pm 10\%$ measurement uncertainty has no significant effect. An effect is deemed significant if it yields to greater than six fold increase in failure probability compared with an approach that neglects of measurement uncertainty.
+      \item The effect of measurement uncertainty is more pronounced for low variability random variables where its contribution to the total uncertainty increases.
+      \item It is demonstrated that the statistical approach can be used to decontaminate the observations, thus to access the variable of interest.
+      \item For ground snow extremes at lowlands, neglect of measurement uncertainty provides a reasonable approximation. Otherwise more advanced analysis is recommended.
+      \item Figures are produced that can be used to identify cases when the neglect of measurement uncertainty significantly overestimates the reliability index. \item For practical applications, the lower interval bound and predictive reliability index are recommended as point estimates using interval and statistical analysis, respectively.
+    \end{itemize}
+
+    \textbf{Novelty} \\
+    The conducted measurement uncertainty analyses represent novelty both in methodology and in results, i.e. demonstrating their practical significance and the inadequacy of current practice for some cases. Mathematically sound statistical and interval based approaches are adapted from statistics and computational science; their application to measurement uncertainty in civil engineering is novel.
+  
+    \textbf{Scope and limits}
+
+  %.................................................................
+  % LONG-TERM TREND
+  \item \textit{Is the stationary assumption tenable for snow extremes? What are the practical implications of time-trends for structural reliability?}
+  
+    \textbf{Current practice, previous works} \\
+    The current structural design provisions are prevalently based on experience and on the assumption of stationary meteorological conditions. However, the observations of past decades and advanced climate models show that this assumption is debatable. Non-stationary extreme value analyses are regularly performed by practitioners of other fields, such as statisticians and meteorologists, but rarely considered or applied by civil engineers especially for standardization.
+
+    \textbf{Methodology} \\
+    Annual maxima snow water equivalents are taken and univariate generalized extreme value distribution is adopted as a probabilistic model. Stationary and five non-stationary distributions are fitted to the observations utilizing the maximum likelihood method. Statistical and information theory based approaches are used to compare the models and to identify trends. Finally, reliability analyses are performed on a simple structure to explore the practical significance of the trends.
+
+    \textbf{Proposed answers, conclusions}
+    \begin{itemize}
+      \item A decreasing trend in annual snow maxima is found for 97\% of the studied region.
+      \item The likelihood ratio test identified numerous locations with statistically significant ($p < 0.05$) decreasing trends. However, the power of the test on average is low, and the effect size compared to confidence intervals regarding the 50-year return value reveals substantial uncertainty.
+      \item The likelihood ratio test and Akaike weights suggest that the trend in the annual maxima is better captured by allowing trend in the location parameter than in the scale parameter.
+      \item The reliability analyses show that the practical significance of time trends is not implied by the statistical significance. This is largely due to the substantial uncertainty in the parameter estimation, dominating structural reliability.
+      \item The reliability analyses indicate that for most locations in the region, which are characterized by Fréchet distribution, the negative trend in annual snow maxima has a minor effect on structural reliability, the uncertainty in parameter estimation is governing.
+      \item For locations with a strongly decreasing trend and Weibull distribution, the effect of the trend on structural reliability is practically significant, although it is favorable.
+    \end{itemize}
+
+    \textbf{Novelty} \\
+    Quantitative analysis on the effect of time-trends in ground snow loads on structural reliability has not yet been undertaken. Furthermore, long-term trends in extreme snow loads, e.g. annual maxima, for the Carpathian Region have not been sufficiently analyzed yet.
+  
+    \textbf{Scope and limits} \\
+    50 years of observations along with annual block maxima approach allows only for poor extrapolation to future, that is the parameter estimation uncertainty dominates. More certain inference could be achieved by using climate prediction. A limitation of this study is that only Generalized extreme value distributions are considered. This can have an important effect on the failure probability, since that is governed by the tail of the distribution.
+
+  %\item \textit{Is exceptional ground snow load justified from meteorological, statistical, or reliability point of view? What can be a rational definition of it? How large its value should be?}
+  
+  %.................................................................
+  % COPULA 
+  \item \textit{How large is the effect of copula assumption on time-variant structural reliability? Is the current practice conservative for snow loads? How to treat copula function uncertainty?}
+
+    \textbf{Current practice, previous works} \\
+    In structural reliability the dependence structure between random variables is almost exclusively modeled by Gauss copula, however, this implicit assumption is typically not corroborated. Some studies -- from various disciplines -- indicate that the adopted copula function can have significant effect on the outcomes. Still, time-variant problems with continuous stochastic processes are not modeled by other than Gauss copula in civil engineering.
+
+    \textbf{Methodology} \\%Co ceptual framework
+    Time-variant reliabilities are calculated and compared using Gauss, $t$, Gumbel, rotated Gumbel, and rotated Clayton copulas.
+    Since analytical solutions are in general not available, finite difference formulation of out-crossing rate is used. Three simple examples are considered to investigate the effect of copula assumption. In the third one, the copula function is inferred from observations.
+
+    \textbf{Proposed answers, conclusions}
+    \begin{itemize}
+      \item The applied dependence structure has significant effect on time-variant reliability. The prevalently applied Gauss copula assumption can 4 times underestimate or even 10 times overestimate failure probabilities obtained by other adopted copulas.
+      \item For a simple case (Example 1), it is demonstrated that by an appropriate choice of copula function arbitrary large error can be produced in time-variant failure probability, compared with that of the Gauss copula.
+      \item The autocorrelation function has considerable effect on the time-variant failure probability. The ratio of normalized time-variant Cauchy and Gaussian failure probabilities is uniformly 1.41. It is solely influenced by the autocorrelation function.
+      \item Analysis of ground snow observations implies that extremes copulas, such as Gumbel, fit significantly better to dependent snow extremes than Gauss copula. The Gumbel copula can yield to 4 times lower out-crossing rate than that of Gauss.
+      \item For many copulas quad or larger precision\footnote{The standard floating point precision in most numerical applications, such as Matlab and R, is double, hence that is insufficient for these calculations.} calculation is required to accurately capture the out-crossing rate.
+    \end{itemize}
+
+    \textbf{Novelty} \\
+    The effect of copula and autocorrelation functions on time-variant reliability has not yet been studied previously and the findings provide a novel insight into these problems.
+  
+    \textbf{Scope and limits} \\
+    The raised questions are valid and proposed approach is applicable for all types of time-continuous stochastic processes and not limited to snow actions.
+    Although, the numerical findings may vary based on the particular variable, for example other might be better described by Gauss copula thus the error is smaller.
+    
+\end{enumerate}
+
+%****************************************************************************************
+%****************************************************************************************
+\section{Practical recommendations}
+
+formulating a stepwise methodology indicating how the topics, findings and proposals could be implemented in standards
++ case specific assessment of safety critical structures
+
+The examined problems are general and exist for almost all random variables\mynote{though their importance may vary}. Thus, we surmise that the herein advanced conclusions and recommendations can be applied to those as well.
+%\section{Future work}
+
+%****************************************************************************************
+%****************************************************************************************
+%\section{New scientific results} it's a joke..
+\section{Contributions to civil engineering}
+
+In accordance with the requirements of the Vásárhelyi Pál Doctoral School, the alleged contributions of the candidate are organized into theses. These are formulated to comply with the unwritten rules of the School.
+
+%****************************************************************************************
+\subsection*{Summary of contributions in English}
+
+% special list could be created to automate numbering
+%The following theses summarize the alleged contributions of this study:
+\begin{center}
+  \textbf{Thesis I} \hfill
+\end{center}
+
+\begin{enumerate}[leftmargin=*, align=left]
+
+  %\begin{center}
+  %.................................................................
+  % DISTRIBUTION
+  \item[]
+  %\end{center}
+  I statistically analyzed the ground snow water equivalent data of about 6000 grid points in the Carpathian Region covering 49 winter seasons from 1961 to 2010. I fitted multiple distribution types to the snow maxima that are extracted from daily observations. Based on extensive statistical analysis:
+  \begin{enumerate}[leftmargin=*, align=left]
+    \item[\textbf{I/a}] I demonstrated that mountains and highlands are better represented by Weibull, while lowlands by Fréchet distribution compared with the currently standardized Gumbel model of Eurocode. I showed that the Gumbel model often appreciably underestimates the snow maxima of lowlands and thus overestimates structural reliability. The Lognormal model typically performs even worse than the Gumbel. Based on reliability, empirical (data-driven), and theoretical considerations Weibull distribution is recommended for mountains and highlands, and Fréchet for lowlands.
+    
+    \item[\textbf{I/b}] I determined the posterior distribution of the characteristics of snow maxima for representative areas in the region. These can be used as prior information for regions with similar conditions. Furthermore, I created an open-source, online, interactive snow map that can be used to obtain characteristic ground snow load and to check exceptional ground snow load with 10~km spatial resolution. 
+  \end{enumerate}
+  
+  \citep{RozsasAMM2016, RozsasESREL2015, VighTO2016, RozsasIABSE2015}
+  
+ 
+ \begin{center}
+  \noindent\rule[0.5ex]{0.5\linewidth}{0.5pt}
+  \item[\textbf{Thesis II}] \hfill
+ \end{center}
+  %.................................................................
+  % STAT UNCERTAINTY 
+  I analyzed the effect of statistical uncertainties: parameter estimation and model selection uncertainties on representative fractiles and on reliability. These are prevalently neglected in current civil engineering practice though inescapably present due to data scarcity.
+  \begin{enumerate}[leftmargin=*, align=left]
+    \item[\textbf{II/a}] I showed that the neglect of parameter estimation uncertainty can lead to considerable (20\%) underestimation of representative fractiles. Furthermore, the applied distribution type (model selection uncertainty) has larger effect on representative fractiles than the parameter estimation uncertainty. Two-parameter Lognormal, three-parameter Lognormal, Gumbel, and Generalized extreme value distributions are considered.
+    
+  \item[\textbf{II/b}] Using reliability analyses, I demonstrated that the neglect of statistical uncertainties can even lead to multiple order of magnitude underestimation of failure probability. This also means that the standards, which overwhelmingly neglect this uncertainty on effect side, such as Eurocode, ensure lower reliability level than claimed.  
+  
+  \item[\textbf{II/c}] I illustrated that the use of ``best'' point estimates, such as maximum likelihood or method of moments estimates, are not conservative from reliability point of view. They can lead to practically significant underestimation of representative fractiles and failure probability; even over an order of magnitude for the latter. Based on the findings, I made recommendations on the treatment of statistical uncertainties for normal and safety critical structures. Furthermore, I recommend the use of Bayesian posterior predictive distribution in reliability analysis and I advocate model averaging to account for model selection uncertainty.
+  \end{enumerate}
+  
+  \citep{RozsasEpistemic2014, RozsasESREL2015, RozsasIABSE2015, RozsasMM2015, RozsasTVSB2015, RozsasIdojaras2016}
+  
+ \begin{center}
+  \noindent\rule[0.5ex]{0.5\linewidth}{0.5pt}
+  \item[\textbf{Thesis III}] \hfill
+ \end{center}
+  %.................................................................
+  % MEASUREMENT UNCERTAINTY
+  I analyzed the effect of measurement uncertainty on structural reliability that is typically neglected in civil engineering. I proposed statistical and interval analysis based approaches and concluded that:
+    \begin{enumerate}[leftmargin=*, align=left]
+      \item[\textbf{III/a}] Measurement uncertainty may lead to significant (order of magnitude) underestimation of failure probability and in these cases it should be taken into account in reliability studies. Ranges of the key parameters are identified where measurement uncertainty should be considered. I derived these from analysis of Normal, Lognormal, and Gumbel distributions with coefficient of variation ranging from 0.2 to 0.6 and with various extent of measurement uncertainty.
+      
+      \item[\textbf{III/b}] If the contamination mechanism is known then the statistical approach is recommended, otherwise the interval approach is advocated. For ground snow extremes at lowlands, the neglect of measurement uncertainty is acceptable. Otherwise, more advanced analysis is recommended.
+      
+     \item[\textbf{III/c}] For practical applications, the lower interval bound and predictive reliability index are recommended as point estimates using interval and statistical analysis, respectively. The point estimates should be accompanied by uncertainty intervals, which convey valuable information about the credibility of results.
+    \end{enumerate}
+  
+    
+  \citep{RozsasREC2016snow}
+  
+  \begin{center}
+    \noindent\rule[0.5ex]{0.5\linewidth}{0.5pt}
+    \item[\textbf{Thesis IV}] \hfill
+  \end{center}
+  %.................................................................
+  % LONG-TERM TREND
+  Using non-stationary distributions, I analyzed the long-term time-trends in snow maxima of the last 49 years. By statistical and information theory based analysis I showed that:
+  \begin{enumerate}[leftmargin=*, align=left]
+    \item[\textbf{IV/a}] Decreasing time-trend is present in annual snow maxima for 97\% of the Carpathian Region. Statistically significant ($p<5\%$) decreasing time-trend is found for 65\% of the studied region. The hypothesis test is accompanied by effect size and power analysis too. Furthermore, the practical significance of change is demonstrated in respect of characteristic values for several locations. The time-trends are confirmed by information theory based analysis too.
+  
+    \item[\textbf{IV/b}] For most locations in the region, which are characterized by Fréchet distribution, the negative trend in annual snow maxima has a minor effect on structural reliability, the uncertainty in parameter estimation is governing. For locations with a strongly decreasing trend and Weibull distribution, the effect of the trend on structural reliability is practically significant, although the change is favorable from a safety point of view as it increases the reliability.
+  \end{enumerate}
+  
+  \citep{RozsasEM2015, RozsasIdojaras2016, RozsasAMM2016, SykoraIALCCE2016}
+  
+  \begin{center}
+    \noindent\rule[0.5ex]{0.5\linewidth}{0.5pt}
+    \item[\textbf{Thesis V}] \hfill
+  \end{center}
+  %.................................................................
+  % COPULA   
+    I investigated the effect of widespread Gauss copula assumption on time-variant reliability with continuous stochastic processes and demonstrated that:
+    \begin{enumerate}[leftmargin=*, align=left]
+      \item[\textbf{V/a}] The applied dependence structure has significant effect on time-variant reliability. The prevalently applied Gauss copula assumption can four times underestimate or even ten times overestimate failure probabilities obtained by other adopted copulas ($t$, Gumbel, rotated Gumbel, and rotated Clayton). For a simple case, I demonstrated that by an appropriate choice of copula function, arbitrary large error can be produced in out-crossing rate compared with that of the Gauss copula.
+      
+      \item[\textbf{V/b}] The autocorrelation function has considerable effect on the time-variant failure probability. The ratio of normalized time-variant failure probabilities obtained using Cauchy and Gauss autocorrelation functions is uniformly 1.41. It is solely influenced by the autocorrelation function type.
+      
+      \item[\textbf{V/c}] Analysis of ground snow observations implies that extremes copulas, such as Gumbel, fit significantly better to dependent snow extremes than Gauss copula. The Gumbel copula can yield to four times lower out-crossing rate than that of Gauss.
+      
+      \item[\textbf{V/d}] If observations are available, the actual dependence structure should be inferred from them. In case of limited information, multiple copula functions should be used to quantify the related uncertainty. In the latter, the sole use of Gauss copula is not justified and may not err on the safe side. Model averaging is proposed as a viable approach to rigorously account for this uncertainty.
+    \end{enumerate}
+  
+    \citep{RozsasSR2016}
+  
+\end{enumerate}
+
+
+%****************************************************************************************
+\subsection*{Summary of contributions in Hungarian}
+
+% list of the candidate's papers would be great
